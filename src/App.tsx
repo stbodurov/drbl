@@ -1,5 +1,5 @@
-import Sidebar from "./components/Sidebar";
-import Home from "./pages/Home";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Home from "./pages/Home/Home";
 
 import "./styles/App.scss";
 

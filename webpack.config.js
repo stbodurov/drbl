@@ -2,6 +2,9 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 require("dotenv").config();
 
+// Try the environment variable, otherwise use root
+const ASSET_PATH = process.env.ASSET_PATH || '/';
+
 module.exports = {
 	mode: process.env.MODE,
 	entry: "./src/index.tsx",
@@ -27,8 +30,11 @@ module.exports = {
 			}
 		]
 	},
-	plugins: [new HtmlWebpackPlugin({ template: "./src/index.html"})],
+	plugins: [new HtmlWebpackPlugin({ template: "./src/index.html", favicon: "./public/favicon.ico" })],
 	resolve: {
 		extensions: [".ts", ".tsx", ".js", ".jsx"]
-	}
+	},
+	// output: {
+	// 	publicPath: ASSET_PATH
+	// }
 };
