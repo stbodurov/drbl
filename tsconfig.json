@@ -1,8 +1,23 @@
 {
-	"include": ["src/**/*", "react-app-env.d.ts"],
+	"include": [
+		"src/**/*",
+		"react-app-env.d.ts"
+	],
 	"compilerOptions": {
 		"jsx": "react-jsx",
-		"plugins": [{"name": "typescript-plugin-css-modules"}],
-		"esModuleInterop": true
+		"plugins": [
+			{
+				"name": "typescript-plugin-css-modules"
+			}
+		],
+		"esModuleInterop": true,
+		"strict": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		"strictBindCallApply": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictPropertyInitialization": true
 	}
 }

@@ -1,11 +1,14 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-require("dotenv").config();
+import path from "path";
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import dotenv from "dotenv"
 
+dotenv.config();
+
+const PROD = process.env.MODE === "production";
 // Try the environment variable, otherwise use root
 const ASSET_PATH = process.env.ASSET_PATH || '/';
 
-module.exports = {
+export default {
 	mode: process.env.MODE,
 	entry: "./src/index.tsx",
 	module: {
@@ -26,7 +29,16 @@ module.exports = {
 			{
 				test: /\.s?(a|c)ss$/,
 				exclude: /node_modules/,
-				use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
+				use: [
+					"style-loader",
+					{
+						loader: "css-loader",
+						options: {
+							sourceMap: !PROD
+						}
+					},
+					"postcss-loader",
+					"sass-loader"]
 			}
 		]
 	},
