@@ -1,6 +1,8 @@
 {
-	"include": ["src/**/*"],
+	"include": ["src/**/*", "react-app-env.d.ts"],
 	"compilerOptions": {
-		"jsx": "react-jsx"
+		"jsx": "react-jsx",
+		"plugins": [{"name": "typescript-plugin-css-modules"}],
+		"esModuleInterop": true
 	}
 }

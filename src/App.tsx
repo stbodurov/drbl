@@ -1,11 +1,11 @@
 import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./pages/Home/Home";
 
-import "./styles/App.scss";
+import styles from "./styles/App.module.scss";
 
 const App = () => {
 	return (
-		<div className="main">
+		<div className={styles.main}>
 			<Sidebar />
 			<Home />
 		</div>

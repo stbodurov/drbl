@@ -1,12 +1,13 @@
 import React from "react";
-import "./Sidebar.scss";
+import styles from "./Sidebar.module.scss";
 
 import { RiHomeLine } from "react-icons/ri";
 
 const Sidebar: React.FC = () => {
 	return (
-		<nav className="sidebar">
-			<ul className="options">
+		<nav className={styles.sidebar}>
+			<h1 className={styles.title}>Coinbets</h1>
+			<ul className={styles.options}>
 				<li>
 					<SidebarLink current>
 						<RiHomeLine size="16px" color="white" />
@@ -34,7 +35,7 @@ const Sidebar: React.FC = () => {
 				</li>
 			</ul>
 
-			<ul className="options">
+			<ul className={styles.options}>
 				<li>
 					<SidebarLink compact>
 						<RiHomeLine size="16px" color="white" />
@@ -51,7 +52,7 @@ const Sidebar: React.FC = () => {
 };
 
 const SidebarLink = (props) => (
-	<a className={"sidebarLink" + (props.current ? " current" : "") + (props.compact ? " compact" : "")}>
+	<a className={styles["sidebarLink" + (props.current ? " current" : "") + (props.compact ? " compact" : "")]}>
 		{props.children}
 	</a>
 );

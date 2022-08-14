@@ -32,9 +32,12 @@ module.exports = {
 	},
 	plugins: [new HtmlWebpackPlugin({ template: "./src/index.html", favicon: "./public/favicon.ico" })],
 	resolve: {
-		extensions: [".ts", ".tsx", ".js", ".jsx"]
+		extensions: [".ts", ".tsx", ".js", ".jsx", ".scss"]
 	},
 	// output: {
 	// 	publicPath: ASSET_PATH
 	// }
+	stats: {
+		errorDetails: true
+	}
 };
