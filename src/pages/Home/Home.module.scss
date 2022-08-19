@@ -1,11 +1,29 @@
-.homeTitle {
-	color: rgb(0, 60, 255);
+.main {
+	margin-left: 15rem;
+}
+
+.header {
+	border-bottom: 2px solid rgba(217, 217, 217, 0.259);
+	width: 100%;
+	height: 10rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 6rem 4rem 1rem 4rem;
+}
+
+.overviewTitle {
+	color: rgb(79, 79, 79);
 	opacity: 0.8;
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 }
 
-.userGreeting {
+.viewTitle {
 	font-size: 1.5rem;
-	color: rgb(35, 72, 163);
+}
+
+.center {
+	padding: 3rem 4rem 1rem 4rem;
+
 }
