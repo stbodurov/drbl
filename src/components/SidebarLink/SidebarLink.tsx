@@ -7,8 +7,7 @@ type SidebarLinkProps = {
 	route: string
 };
 
-const SidebarLink = ({text, iconName, route}: SidebarLinkProps) => {
-	const {pathname} = useLocation();
+const SidebarLink = ({text, route}: SidebarLinkProps) => {
 	const current = !!useMatch(route);
 
 	return (

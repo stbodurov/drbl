@@ -25,5 +25,13 @@
 
 .center {
 	padding: 3rem 4rem 1rem 4rem;
+}
 
+.cardHolder {
+	display: inline-flex;
+	gap: 2rem;
+}
+
+.cardHolderCont {
+	overflow: auto;
 }

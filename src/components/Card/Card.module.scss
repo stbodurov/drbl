@@ -1,7 +1,51 @@
 .card {
-	padding: 2rem;
-	width: 16rem;
+	padding: 1.5rem;
+	width: 17rem;
 	height: 10rem;
-	background: linear-gradient(blue, green);
+	background: rgb(237, 237, 237);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	color: white;
+}
+
+.card[data-ticker=BTC] {
+	background: linear-gradient(90deg, #44E0D3, #1DABD2);
+}
+
+.card[data-ticker=ETH] {
+	background: linear-gradient(90deg, #9172FE, #FA609C);
+}
+
+.card[data-ticker=LUNA] {
+	background: linear-gradient(90deg, #F6CD88, #F6586C);
+}
+
+.card[data-ticker=DOT] {
+	background: linear-gradient(90deg, #7047FE, #98AAFF);
+}
+
+.logo {
+	display: block;
+	width: 2.75rem;
+	height: 2.75rem;
 	border-radius: 25px;
+	background-color: rgba(240, 248, 255, 0.24);
+}
+
+.priceData {
+	display: flex;
+	flex-direction: column;
+}
+
+.equity {
+	font-size: 1.65rem;
+}
+
+.marketCap {
+	font-size: 0.85rem;
+	letter-spacing: 0.3px;
+	font-weight: 450;
 }

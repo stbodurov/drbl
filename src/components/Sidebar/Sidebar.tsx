@@ -1,4 +1,3 @@
-import React, { PropsWithChildren } from "react";
 import SidebarLink from "../SidebarLink/SidebarLink";
 import styles from "./Sidebar.module.scss";
 

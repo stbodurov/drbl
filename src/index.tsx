@@ -5,7 +5,7 @@ import "./styles/index.scss";
 import { StrictMode } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
-const root = createRoot(document.getElementById("main")!);
+const root = createRoot(document.getElementById("main") as Element);
 root.render(
 	<StrictMode>
 		<Router>

@@ -1,23 +1,27 @@
 import styles from "./Card.module.scss";
-import { Link, useLocation, useMatch } from "react-router-dom";
 
 type CardProps = {
-	currency: string,
-	equity: string,
-	marketCap: string
-	gradientColorBegin: string,
-	gradientColorEnd: string
+	ticker: ("BTC" | "ETH" | "LUNA" | "DOT"),
+	equity: number,
+	marketCap: string,
 };
 
-const Card = ({ currency, equity, marketCap, gradientColorBegin, gradientColorEnd }: CardProps) => {
+const Card = ({ ticker, equity, marketCap }: CardProps) => {
 	return (
-		<div className={styles.card}
-			data-gradient-color-begin={gradientColorBegin}
-			data-gradient-color-end={gradientColorEnd}>
-			<span>${equity}</span>
-			<span>Market Cap ${marketCap}</span>
+		<div className={styles.card} data-ticker={ticker}>
+			<span className={styles.logo}>
+
+			</span>
+			<div className={styles.priceData}>
+				<span className={styles.equity}>
+					${equity.toFixed(2)}
+				</span>
+				<span className={styles.marketCap}>
+					Market Cap ${marketCap}
+				</span>
+			</div>
 		</div>
 	)
 };
 
-export default Card
+export default Card;
