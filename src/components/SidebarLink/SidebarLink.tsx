@@ -3,16 +3,21 @@ import { Link, useLocation, useMatch } from "react-router-dom";
 
 type SidebarLinkProps = {
 	text: string,
-	iconName: string,
-	route: string
+	route: string,
+	hasUpdate?: boolean,
+	children?: React.ReactNode
 };
 
-const SidebarLink = ({text, route}: SidebarLinkProps) => {
+const SidebarLink = ({ text, route, hasUpdate, children }: SidebarLinkProps) => {
 	const current = !!useMatch(route);
 
 	return (
 		<Link to={route} className={styles.sidebarLink} data-current={current}>
-			{text}
+			<div className={styles.content}>
+				{children}
+				{text}
+			</div>
+			{hasUpdate && <span className={styles.badge}></span>}
 		</Link>
 	)
 };

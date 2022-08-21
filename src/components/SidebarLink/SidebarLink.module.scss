@@ -6,6 +6,7 @@
 	padding-right: 2rem;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 
@@ -14,24 +15,28 @@
 		background-color: #744DFE;
 		box-shadow: 0 0 30px 1px rgba(102, 51, 222, 0.366);
 
-		&::after {
-			display: inline-block;
-			margin-left: 0.5rem;
-			border-radius: 10px;
-			content: "";
-			width: 0.75rem;
-			height: 0.75rem;
-			background-color: #BBA8FC;
+		& a:active {
+			background-color: #3903fc;
 		}
-	}
 
-	&:active {
-		background-color: rgb(117, 95, 169);
-	}
+		&:hover {
+			background-color: #683EFF;
+		}
 
-	&:hover {
-		background-color: rgb(168, 150, 209);
 	}
+}
 
-	border: 0;
+.content {
+	display: flex;
+	align-items: center;
+}
+
+.badge {
+	display: inline-block;
+	margin-left: 0.5rem;
+	border-radius: 10px;
+	content: "";
+	width: 0.75rem;
+	height: 0.75rem;
+	background-color: #cfcfcfab;
 }

@@ -16,16 +16,17 @@ export default () => (
 			<h3 className={styles.viewTitle}>Trading View</h3>
 		</header>
 		<main className={styles.center}>
-			<div className={styles.cardHolderCont}>
+			{/* <div className={styles.cardHolderCont}> */}
 				<div className={styles.cardHolder}>
 					{currencyData.map(({ ticker, equity, marketCap }: CurrencyData) =>
 						<Card
+							key={ticker}
 							ticker={ticker}
 							equity={equity}
 							marketCap={marketCap} />
 					)}
 				</div>
-			</div>
+			{/* </div> */}
 		</main>
 	</div>
 );

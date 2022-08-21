@@ -13,18 +13,22 @@
 
 .card[data-ticker=BTC] {
 	background: linear-gradient(90deg, #44E0D3, #1DABD2);
+	box-shadow:  0 65px 30px -70px #017fa1;
 }
 
 .card[data-ticker=ETH] {
 	background: linear-gradient(90deg, #9172FE, #FA609C);
+	box-shadow:  2px 71px 41px -66px #9172FE;
 }
 
 .card[data-ticker=LUNA] {
 	background: linear-gradient(90deg, #F6CD88, #F6586C);
+	box-shadow:  2px 71px 41px -66px #F6CD88;
 }
 
 .card[data-ticker=DOT] {
 	background: linear-gradient(90deg, #7047FE, #98AAFF);
+	box-shadow:  2px 71px 41px -66px #7047FE;
 }
 
 .logo {
