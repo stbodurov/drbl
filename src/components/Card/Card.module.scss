@@ -1,55 +1,19 @@
 .card {
 	padding: 1.5rem;
-	width: 17rem;
-	height: 10rem;
-	background: rgb(237, 237, 237);
+	min-width: 6rem;
+	min-height: 5rem;
 	border-radius: 5px;
+	border: var(--grey-border);
+	box-shadow: 0 0 5px 5px rgba(220, 220, 220, 0.388);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
-	color: white;
 }
 
-.card[data-ticker=BTC] {
-	background: linear-gradient(90deg, #44E0D3, #1DABD2);
-	box-shadow:  0 65px 30px -70px #017fa1;
+.header {
+	min-height: 2rem;
 }
 
-.card[data-ticker=ETH] {
-	background: linear-gradient(90deg, #9172FE, #FA609C);
-	box-shadow:  2px 71px 41px -66px #9172FE;
-}
-
-.card[data-ticker=LUNA] {
-	background: linear-gradient(90deg, #F6CD88, #F6586C);
-	box-shadow:  2px 71px 41px -66px #F6CD88;
-}
-
-.card[data-ticker=DOT] {
-	background: linear-gradient(90deg, #7047FE, #98AAFF);
-	box-shadow:  2px 71px 41px -66px #7047FE;
-}
-
-.logo {
-	display: block;
-	width: 2.75rem;
-	height: 2.75rem;
-	border-radius: 25px;
-	background-color: rgba(240, 248, 255, 0.24);
-}
-
-.priceData {
-	display: flex;
-	flex-direction: column;
-}
-
-.equity {
-	font-size: 1.65rem;
-}
-
-.marketCap {
-	font-size: 0.85rem;
-	letter-spacing: 0.3px;
-	font-weight: 450;
+.title {
+	font-size: 1.2rem;
 }

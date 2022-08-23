@@ -10,20 +10,21 @@
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 
-	&[data-current="true"] {
-		color: white;
-		background-color: #744DFE;
-		box-shadow: 0 0 30px 1px rgba(102, 51, 222, 0.366);
+}
 
-		& a:active {
-			background-color: #3903fc;
-		}
+.sidebarLinkCurrent {
+	color: white;
+	background-color: #744DFE;
+	box-shadow: 0 0 30px 1px rgba(102, 51, 222, 0.366);
 
-		&:hover {
-			background-color: #683EFF;
-		}
-
+	& a:active {
+		background-color: #3903fc;
 	}
+
+	&:hover {
+		background-color: #683EFF;
+	}
+
 }
 
 .content {

@@ -12,7 +12,7 @@ const SidebarLink = ({ text, route, hasUpdate, children }: SidebarLinkProps) => 
 	const current = !!useMatch(route);
 
 	return (
-		<Link to={route} className={styles.sidebarLink} data-current={current}>
+		<Link to={route} className={`${styles.sidebarLink} ${current ? styles.sidebarLinkCurrent : ""}`}>
 			<div className={styles.content}>
 				{children}
 				{text}

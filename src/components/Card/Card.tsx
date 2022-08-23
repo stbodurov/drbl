@@ -1,25 +1,15 @@
 import styles from "./Card.module.scss";
 
 type CardProps = {
-	ticker: ("BTC" | "ETH" | "LUNA" | "DOT"),
-	equity: number,
-	marketCap: string,
+	title: string,
 };
 
-const Card = ({ ticker, equity, marketCap }: CardProps) => {
+const Card = ({ title }: CardProps) => {
 	return (
-		<div className={styles.card} data-ticker={ticker}>
-			<span className={styles.logo}>
-
-			</span>
-			<div className={styles.priceData}>
-				<span className={styles.equity}>
-					${equity.toFixed(2)}
-				</span>
-				<span className={styles.marketCap}>
-					Market Cap ${marketCap}
-				</span>
-			</div>
+		<div className={styles.card}>
+			<header className={styles.header}>
+				<h2 className={styles.title}>{title}</h2>
+			</header>
 		</div>
 	)
 };

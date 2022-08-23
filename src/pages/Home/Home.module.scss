@@ -1,5 +1,7 @@
+
 .main {
 	margin-left: 15rem;
+	--section-padding: 3rem 4rem;
 }
 
 .header {
@@ -23,16 +25,18 @@
 	font-size: 1.5rem;
 }
 
-.center {
-	padding: 3rem 4rem;
+.currencyCards {
+	padding: var(--section-padding);
+	width: 100%;
 	border-bottom: var(--grey-border);
-}
-
-.cardHolder {
 	display: inline-flex;
 	gap: 2rem;
 }
 
-.cardHolderCont {
-	overflow: auto;
+.infoCards {
+	padding: var(--section-padding);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 2rem;
 }
