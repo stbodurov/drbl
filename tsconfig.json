@@ -4,14 +4,15 @@
 		"react-app-env.d.ts"
 	],
 	"compilerOptions": {
-		"module": "NodeNext",
+		"module": "ESNext",
+		"target": "ESNext",
 		"jsx": "react-jsx",
 		"plugins": [
 			{
 				"name": "typescript-plugin-css-modules"
 			}
 		],
-		"resolveJsonModule": true,
+		"moduleResolution": "node",
 		"esModuleInterop": true,
 		"strict": true,
 		"noImplicitAny": true,

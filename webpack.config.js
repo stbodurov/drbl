@@ -1,6 +1,6 @@
-import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import dotenv from "dotenv"
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 dotenv.config();
 
@@ -22,7 +22,14 @@ export default {
 						options: {
 							presets: [
 								"@babel/preset-env",
-								["@babel/preset-react", { runtime: "automatic" }]]
+								["@babel/preset-react", { runtime: "automatic" }]
+							]
+						}
+					},
+					{
+						loader: "@linaria/webpack5-loader",
+						options: {
+							preprocessor: 'none'
 						}
 					},
 					"ts-loader"
@@ -32,7 +39,9 @@ export default {
 				test: /\.s?(a|c)ss$/,
 				exclude: /node_modules/,
 				use: [
-					"style-loader",
+					{
+						loader: MiniCssExtractPlugin.loader
+					},
 					{
 						loader: "css-loader",
 						options: {
@@ -44,7 +53,15 @@ export default {
 			}
 		]
 	},
-	plugins: [new HtmlWebpackPlugin({ template: "./src/index.html", favicon: "./public/favicon.ico" })],
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: "./src/index.html",
+			favicon: "./public/favicon.ico"
+		}),
+		new MiniCssExtractPlugin({
+			filename: "styles.css"
+		})
+	],
 	resolve: {
 		extensions: [".ts", ".tsx", ".js", ".jsx", ".scss"]
 	},
