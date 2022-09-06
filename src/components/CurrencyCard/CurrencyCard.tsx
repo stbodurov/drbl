@@ -1,4 +1,3 @@
-import {IconType} from "react-icons";
 import { TickerType } from "../../types";
 import styles from "./CurrencyCard.module.scss";
 

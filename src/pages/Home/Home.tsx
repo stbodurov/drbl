@@ -1,4 +1,3 @@
-import { IoLogoBitcoin } from "react-icons/io5";
 import Card from "../../components/Card/Card";
 import Chart from "../../components/Chart/Chart";
 import CurrencyCard from "../../components/CurrencyCard/CurrencyCard";
@@ -7,6 +6,7 @@ import ImpressionsBtn from "../../components/ImpressionsBtn";
 import { TickerType } from "../../types";
 import styles from "./Home.module.scss";
 
+/* eslint-disable @typescript-eslint/no-var-requires */
 const currencyData: CurrencyData[] = require("../../test/mocks/currencies.json");
 
 interface CurrencyData {

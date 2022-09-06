@@ -1,5 +1,5 @@
 import styles from "./SidebarLink.module.scss";
-import { Link, useLocation, useMatch } from "react-router-dom";
+import { Link, useMatch } from "react-router-dom";
 
 type SidebarLinkProps = {
 	text: string,

@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import Chart from "../Chart/Chart";
 import styles from "./Card.module.scss";
 
 type CardProps = {

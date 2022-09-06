@@ -1,4 +1,3 @@
-import styles from "./Chart.module.scss";
 import {
   Chart as ChartJS,
   CategoryScale,

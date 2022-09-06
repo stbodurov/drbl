@@ -8,7 +8,7 @@ const config: Config.InitialOptions = {
 	],
 	moduleNameMapper: {
 		"\\.(css|scss)$": "<rootDir>/src/test/mocks/styleMock.ts"
-	  }
+	}
 };
 
 export default config;

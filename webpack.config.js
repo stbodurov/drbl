@@ -5,8 +5,6 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 dotenv.config();
 
 const PROD = process.env.MODE === "production";
-// Try the environment variable, otherwise use root
-const ASSET_PATH = process.env.ASSET_PATH || '/';
 
 export default {
 	mode: process.env.MODE,

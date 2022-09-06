@@ -1,5 +1,4 @@
 import styles from "./ToolbarLink.module.scss";
-import { MdOutlineSpaceDashboard } from "react-icons/md";
 import { forwardRef } from "react";
 
 const SidebarButton: React.FC = forwardRef<HTMLButtonElement>((_, ref) => (
