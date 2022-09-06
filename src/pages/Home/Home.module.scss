@@ -27,10 +27,36 @@
 
 .currencyCards {
 	padding: var(--section-padding);
-	width: 100%;
 	border-bottom: var(--grey-border);
-	display: inline-flex;
+	display: flex;
+	overflow-x: scroll;
 	gap: 2rem;
+
+	&::-webkit-scrollbar {
+		width: 5px;
+		height: 5px;
+	}
+
+	&:hover::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	}
+
+	&:hover::-webkit-scrollbar-track {
+		background-color: #d3d3d3;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #d3d3d332;
+	}
+
+	&:hover::-webkit-scrollbar-thumb {
+		background-color: #888;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: rgba(136, 136, 136, 0.217);
+	}
 }
 
 .infoCards {
@@ -39,4 +65,10 @@
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
 	gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+	.infoCards {
+		grid-template-columns: 1fr;
+	}
 }

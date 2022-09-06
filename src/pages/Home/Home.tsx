@@ -1,13 +1,19 @@
+import { IoLogoBitcoin } from "react-icons/io5";
 import Card from "../../components/Card/Card";
+import Chart from "../../components/Chart/Chart";
 import CurrencyCard from "../../components/CurrencyCard/CurrencyCard";
+import getCurrencyCardIcon from "../../components/CurrencyCard/getCurrencyCardIcon";
+import ImpressionsBtn from "../../components/ImpressionsBtn";
+import { TickerType } from "../../types";
 import styles from "./Home.module.scss";
 
-const currencyData: CurrencyData[] = require("../../test/mock/currencies.json");
+const currencyData: CurrencyData[] = require("../../test/mocks/currencies.json");
 
 interface CurrencyData {
-	ticker: ("BTC" | "ETH" | "LUNA" | "DOT");
+	ticker: TickerType;
 	equity: number;
 	marketCap: string;
+	icon: JSX.Element
 }
 
 export default () => (
@@ -18,7 +24,7 @@ export default () => (
 				<h3 className={styles.viewTitle}>Trading View</h3>
 			</div>
 			<nav className="toolbar">
-				
+
 			</nav>
 		</header>
 		<main className={styles.center}>
@@ -28,11 +34,17 @@ export default () => (
 						key={ticker}
 						ticker={ticker}
 						equity={equity}
-						marketCap={marketCap} />
+						marketCap={marketCap}
+						icon={getCurrencyCardIcon(ticker)} />
 				)}
 			</section>
 			<section className={styles.infoCards}>
-				<Card title="Impressions" />
+				<Card title="Impressions" headerElements={[
+					<ImpressionsBtn key="weeklyImpressions" className="current">Weekly</ImpressionsBtn>,
+					<ImpressionsBtn key="monthlyImpressions">Monthly</ImpressionsBtn>
+				]}>
+					<Chart />
+				</Card>
 				<Card title="Activity" />
 				<Card title="Bitcoin" />
 				<Card title="Your Portfolio" />

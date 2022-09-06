@@ -15,7 +15,7 @@
 .sidebarLinkCurrent {
 	color: white;
 	background-color: #744DFE;
-	box-shadow: 0 0 30px 1px rgba(102, 51, 222, 0.366);
+	box-shadow: var(--active-btn-shadow);
 
 	& a:active {
 		background-color: #3903fc;
