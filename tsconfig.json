@@ -12,6 +12,7 @@
 				"name": "typescript-plugin-css-modules"
 			}
 		],
+		"types": ["node", "jest", "@testing-library/jest-dom"],
 		"moduleResolution": "node",
 		"esModuleInterop": true,
 		"strict": true,
