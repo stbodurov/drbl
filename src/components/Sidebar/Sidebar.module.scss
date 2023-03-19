@@ -1,24 +1,35 @@
 .sidebar {
-	background-color: #f6f6f6;
-	width: 15rem;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	height: 100vh;
-	position: fixed;
+  background-color: #f6f6f6;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+}
+
+.iconHolder {
+	height: 65;
+	width: 65;
+}
+
+.header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 3rem auto;
 }
 
 .title {
-	font-size: 1.5rem;
-	font-weight: 600;
-	letter-spacing: 1px;
-	margin: 3rem auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .options {
-	list-style-type: none;
-	display: flex;
-	flex-direction: column;
-	gap: .75rem;
-	width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
 }

@@ -6,14 +6,14 @@ import { TickerType } from "../../types";
 export default (ticker: TickerType): JSX.Element => {
 	switch (ticker) {
 		case "BTC":
-			return <BsCurrencyBitcoin size="1.5rem" />
+			return <BsCurrencyBitcoin size={24} />
 		case "ETH":
-			return <TbCurrencyEthereum size="1.5rem" />
+			return <TbCurrencyEthereum size={24} />
 		case "LUNA":
-			return <TbCurrencyLitecoin size="1.5rem" strokeWidth="0.2rem" />
+			return <TbCurrencyLitecoin size={24} strokeWidth="0.2rem" />
 		case "DOT":
-			return <BsDot size="1.5rem" strokeWidth="0.2rem" />
+			return <BsDot size={24} strokeWidth="0.2rem" />
 		default:
-			return <RiFileUnknowLine size="1.5rem" />
+			return <RiFileUnknowLine size={24} />
 	}
 }

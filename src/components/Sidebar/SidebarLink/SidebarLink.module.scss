@@ -14,7 +14,7 @@
 
 .sidebarLinkCurrent {
 	color: white;
-	background-color: #744DFE;
+	background-color: var(--coinbets-accent);
 	box-shadow: var(--active-btn-shadow);
 
 	& a:active {

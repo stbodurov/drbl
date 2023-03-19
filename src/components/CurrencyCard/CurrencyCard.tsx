@@ -1,3 +1,5 @@
+// import { useContext } from "react";
+// import { VisibilityContext } from "react-horizontal-scrolling-menu";
 import { TickerType } from "../../types";
 import styles from "./CurrencyCard.module.scss";
 

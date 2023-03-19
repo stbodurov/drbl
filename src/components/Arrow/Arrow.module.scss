@@ -1,0 +1,42 @@
+.arrowHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transition: opacity 0.35s;
+}
+
+.arrowRight {
+  padding-left: 10rem;
+  padding-right: 1.5rem;
+  background-image: linear-gradient(
+    to left,
+    hsla(0, 0%, 65%, 0.45),
+    rgba(255, 0, 0, 0)
+  );
+}
+
+.arrowLeft {
+  padding-right: 10rem;
+  padding-left: 1.5rem;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0),
+    hsla(0, 0%, 65%, 0.45)
+  );
+}
+
+.arrowBtn {
+  background-color: white;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.18));
+}
+
+.arrowIcon {
+  color: var(--coinbets-accent);
+}

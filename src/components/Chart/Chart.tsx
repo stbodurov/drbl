@@ -7,9 +7,9 @@ import {
   Tooltip,
   Legend,
   ChartOptions,
-  ChartData
-} from 'chart.js';
-import { Bar } from 'react-chartjs-2';
+  ChartData,
+} from "chart.js";
+import { Bar } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
@@ -24,39 +24,82 @@ const options: ChartOptions<"bar"> = {
   responsive: true,
   plugins: {
     legend: {
-      display: false
-    }
+      display: false,
+      labels: {
+        font: {
+          family: "Open Sans",
+        },
+      },
+    },
   },
   scales: {
-
-  }
+    x: {
+      stacked: true,
+      grid: {
+        display: false,
+        drawBorder: false,
+      },
+      ticks: {
+        align: "end",
+        maxRotation: 0,
+        minRotation: 0,
+        autoSkip: false,
+      },
+    },
+    y: {
+      display: false,
+    },
+  },
 };
 
 const data: ChartData<"bar"> = {
-  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+  labels: [
+    "Jan",
+    "",
+    "",
+    "Feb",
+    "",
+    "",
+    "Mar",
+    "",
+    "",
+    "Apr",
+    "",
+    "",
+    "May",
+    "",
+    "",
+    "Jun",
+    "",
+    "",
+  ],
   datasets: [
     {
-      label: 'Dataset 1',
-      data: [13, 24, 53, 15, 45, 21],
-      backgroundColor: 'rgba(255, 99, 132, 0.5)'
+      data: [
+        13, 24, 53, 15, 45, 21, 13, 24, 53, 15, 45, 21, 13, 24, 53, 15, 45, 21,
+      ],
+      backgroundColor: "#744dfe",
+      borderRadius: 50,
+      categoryPercentage: 1.0,
+      barPercentage: 0.4,
     },
     {
-      label: 'Dataset 2',
-      data: [23, 24, 23, 22, 42, 22],
-      backgroundColor: 'rgba(53, 162, 235, 0.5)'
-    },
-    {
-      label: 'Dataset 3',
-      data: [73, 24, 73, 77, 47, 27],
-      backgroundColor: 'rgba(53, 162, 235, 0.5)'
+      data: [
+        -13, -24, -53, -15, -45, -21, -13, -24, -53, -15, -45, -21, -13, -24,
+        -53, -15, -45, -21,
+      ].map((n) => n / 3),
+      backgroundColor: "#EFEBFF",
+      borderRadius: 50,
+      categoryPercentage: 1.0,
+      barPercentage: 0.4,
+      pointRadius: 0,
+      pointHitRadius: 0,
     },
   ],
 };
 
 const Chart = () => {
-  return (
-    <Bar options={options} data={data} />
-  )
+  return <Bar options={options} data={data} />;
 };
 
 export default Chart;
