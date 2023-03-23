@@ -1,7 +1,3 @@
 export default function ActivityBlock() {
-  return (
-    <div>
-
-    </div>
-  )
+  return <div></div>;
 }

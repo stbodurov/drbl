@@ -1,43 +1,41 @@
 .sidebarLink {
-	color: rgb(86, 86, 86);
-	background-color: transparent;
-	padding: 0.75rem;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-
+  color: rgb(86, 86, 86);
+  background-color: transparent;
+  padding: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .sidebarLinkCurrent {
-	color: white;
-	background-color: var(--coinbets-accent);
-	box-shadow: var(--active-btn-shadow);
+  color: white;
+  background-color: var(--coinbets-accent);
+  box-shadow: var(--active-btn-shadow);
 
-	& a:active {
-		background-color: #3903fc;
-	}
+  & a:active {
+    background-color: #3903fc;
+  }
 
-	&:hover {
-		background-color: #683EFF;
-	}
-
+  &:hover {
+    background-color: #683eff;
+  }
 }
 
 .content {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .badge {
-	display: inline-block;
-	margin-left: 0.5rem;
-	border-radius: 10px;
-	content: "";
-	width: 0.75rem;
-	height: 0.75rem;
-	background-color: #cfcfcfab;
+  display: inline-block;
+  margin-left: 0.5rem;
+  border-radius: 10px;
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #cfcfcfab;
 }

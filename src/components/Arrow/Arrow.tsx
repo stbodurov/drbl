@@ -1,7 +1,7 @@
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { VisibilityContext } from "react-horizontal-scrolling-menu";
 import { useContext, useEffect, useState } from "react";
-import classnames from 'classnames';
+import classnames from "classnames";
 import styles from "./Arrow.module.scss";
 
 export const ArrowLeft = () => {

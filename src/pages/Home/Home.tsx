@@ -37,17 +37,15 @@ export default () => (
         RightArrow={ArrowRight}
         wrapperClassName={styles.currencyCards}
       >
-        {currencyData.map(
-          ({ ticker, equity, marketCap }: CurrencyData) => (
-            <CurrencyCard
-              key={ticker}
-              ticker={ticker}
-              equity={equity}
-              marketCap={marketCap}
-              icon={getCurrencyCardIcon(ticker)}
-            />
-          )
-        )}
+        {currencyData.map(({ ticker, equity, marketCap }: CurrencyData) => (
+          <CurrencyCard
+            key={ticker}
+            ticker={ticker}
+            equity={equity}
+            marketCap={marketCap}
+            icon={getCurrencyCardIcon(ticker)}
+          />
+        ))}
       </ScrollMenu>
       <section className={styles.infoCards}>
         <Card

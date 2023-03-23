@@ -1,44 +1,43 @@
-
 .main {
-	margin-left: 15rem;
-	--section-padding: 3rem 4rem;
+  margin-left: 15rem;
+  --section-padding: 3rem 4rem;
 }
 
 .header {
-	border-bottom: var(--grey-border);
-	width: 100%;
-	height: 10rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	padding: 6rem 4rem 1rem 4rem;
+  border-bottom: var(--grey-border);
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 6rem 4rem 1rem 4rem;
 }
 
 .overviewTitle {
-	color: rgb(79, 79, 79);
-	opacity: 0.8;
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
+  color: rgb(79, 79, 79);
+  opacity: 0.8;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .viewTitle {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .currencyCards {
-	border-bottom: var(--grey-border);
+  border-bottom: var(--grey-border);
 }
 
 .infoCards {
-	padding: var(--section-padding);
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
-	gap: 2rem;
+  padding: var(--section-padding);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
 }
 
 @media screen and (max-width: 768px) {
-	.infoCards {
-		grid-template-columns: 1fr;
-	}
+  .infoCards {
+    grid-template-columns: 1fr;
+  }
 }

@@ -43,7 +43,7 @@ export default {
           {
             loader: "css-loader",
             options: {
-              sourceMap: !PROD
+              sourceMap: !PROD,
             },
           },
           "postcss-loader",

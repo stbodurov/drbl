@@ -1,1 +1,1 @@
-export type TickerType = ("BTC" | "ETH" | "LUNA" | "DOT");
+export type TickerType = "BTC" | "ETH" | "LUNA" | "DOT";

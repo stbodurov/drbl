@@ -1,12 +1,12 @@
 {
-	"env": {
-		"node": true,
-		"commonjs": true,
-		"browser": true,
-		"es6": true
-	},
-	"parser": "@typescript-eslint/parser",
-	"plugins": ["@typescript-eslint"],
-	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-	"ignorePatterns": ["node_modules", "dist"]
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "browser": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "ignorePatterns": ["node_modules/", "dist/"]
 }

@@ -92,8 +92,6 @@ const data: ChartData<"bar"> = {
       borderRadius: 50,
       categoryPercentage: 1.0,
       barPercentage: 0.4,
-      pointRadius: 0,
-      pointHitRadius: 0,
     },
   ],
 };

@@ -1,60 +1,60 @@
 .card {
-	padding: 1.5rem;
-	margin: 0 1rem;
-	min-width: 17rem;
-	height: 10rem;
-	background: rgb(237, 237, 237);
-	border-radius: 5px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+  padding: 1.5rem;
+  margin: 0 1rem;
+  min-width: 17rem;
+  height: 10rem;
+  background: rgb(237, 237, 237);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-	color: white;
+  color: white;
 }
 
 .BTC {
-	background: linear-gradient(90deg, #44E0D3, #1DABD2);
-	box-shadow:  0 65px 30px -70px #017fa1;
+  background: linear-gradient(90deg, #44e0d3, #1dabd2);
+  box-shadow: 0 65px 30px -70px #017fa1;
 }
 
 .ETH {
-	background: linear-gradient(90deg, #9172FE, #FA609C);
-	box-shadow:  2px 71px 41px -66px #9172FE;
+  background: linear-gradient(90deg, #9172fe, #fa609c);
+  box-shadow: 2px 71px 41px -66px #9172fe;
 }
 
 .LUNA {
-	background: linear-gradient(90deg, #F6CD88, #F6586C);
-	box-shadow:  2px 71px 41px -66px #F6CD88;
+  background: linear-gradient(90deg, #f6cd88, #f6586c);
+  box-shadow: 2px 71px 41px -66px #f6cd88;
 }
 
 .DOT {
-	background: linear-gradient(90deg, #7047FE, #98AAFF);
-	box-shadow:  2px 71px 41px -66px #7047FE;
+  background: linear-gradient(90deg, #7047fe, #98aaff);
+  box-shadow: 2px 71px 41px -66px #7047fe;
 }
 
 .logo {
-	display: block;
-	width: 2.75rem;
-	height: 2.75rem;
-	border-radius: 25px;
-	background-color: rgba(240, 248, 255, 0.24);
+  display: block;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 25px;
+  background-color: rgba(240, 248, 255, 0.24);
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .priceData {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .equity {
-	font-size: 1.65rem;
+  font-size: 1.65rem;
 }
 
 .marketCap {
-	font-size: 0.85rem;
-	letter-spacing: 0.3px;
-	font-weight: 450;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+  font-weight: 450;
 }

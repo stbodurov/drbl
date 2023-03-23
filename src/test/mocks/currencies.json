@@ -1,22 +1,22 @@
 [
-	{
-		"ticker": "BTC",
-		"equity": 8520.20,
-		"marketCap": "151.45B"
-	},
-	{
-		"ticker": "ETH",
-		"equity": 270.00,
-		"marketCap": "28.69B"
-	},
-	{
-		"ticker": "LUNA",
-		"equity": 115.13,
-		"marketCap": "7.14B"
-	},
-	{
-		"ticker": "DOT",
-		"equity": 175.73,
-		"marketCap": "1.74B"
-	}
+  {
+    "ticker": "BTC",
+    "equity": 8520.2,
+    "marketCap": "151.45B"
+  },
+  {
+    "ticker": "ETH",
+    "equity": 270.0,
+    "marketCap": "28.69B"
+  },
+  {
+    "ticker": "LUNA",
+    "equity": 115.13,
+    "marketCap": "7.14B"
+  },
+  {
+    "ticker": "DOT",
+    "equity": 175.73,
+    "marketCap": "1.74B"
+  }
 ]
