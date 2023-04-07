@@ -10,7 +10,7 @@ const ImpressionsBtn = styled.button`
   &.current {
     background: #754cff;
     color: white;
-    box-shadow: var(--active-btn-shadow);
+    box-shadow: var(--activeBtnShadow);
   }
 `;
 

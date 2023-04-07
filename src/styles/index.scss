@@ -10,9 +10,11 @@ body {
   font-weight: 600;
   letter-spacing: 0.2px;
 
-  --coinbets-accent: #744dfe;
-  --grey-border: 2px solid rgba(217, 217, 217, 0.259);
-  --active-btn-shadow: 0 0 30px 1px rgba(102, 51, 222, 0.366);
+  --coinbetsAccent: #744dfe;
+  --textSecondary: rgb(123, 123, 123);
+  --mainShadow: 0 0 12px 0 rgba(220, 220, 220, 0.388);
+  --greyBorder: 2px solid rgba(217, 217, 217, 0.259);
+  --activeBtnShadow: 0 0 30px 1px rgba(102, 51, 222, 0.366);
 }
 
 ul {

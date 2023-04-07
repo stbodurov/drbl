@@ -22,6 +22,7 @@ ChartJS.register(
 
 const options: ChartOptions<"bar"> = {
   responsive: true,
+  maintainAspectRatio: false,
   plugins: {
     legend: {
       display: false,
@@ -97,7 +98,11 @@ const data: ChartData<"bar"> = {
 };
 
 const Chart = () => {
-  return <Bar options={options} data={data} />;
+  return (
+    <div style={{ minHeight: "12rem" }}>
+      <Bar options={options} data={data} />
+    </div>
+  );
 };
 
 export default Chart;

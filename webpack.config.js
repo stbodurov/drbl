@@ -69,6 +69,9 @@ export default {
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx", ".scss"],
   },
+  devServer: {
+    hot: true,
+  },
   // output: {
   // 	publicPath: ASSET_PATH
   // }

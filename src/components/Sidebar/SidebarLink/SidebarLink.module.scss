@@ -1,5 +1,5 @@
 .sidebarLink {
-  color: rgb(86, 86, 86);
+  color: var(--textSecondary);
   background-color: transparent;
   padding: 0.75rem;
   padding-left: 2rem;
@@ -13,8 +13,8 @@
 
 .sidebarLinkCurrent {
   color: white;
-  background-color: var(--coinbets-accent);
-  box-shadow: var(--active-btn-shadow);
+  background-color: var(--coinbetsAccent);
+  box-shadow: var(--activeBtnShadow);
 
   & a:active {
     background-color: #3903fc;

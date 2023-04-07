@@ -1,24 +1,19 @@
 // import { useContext } from "react";
 // import { VisibilityContext } from "react-horizontal-scrolling-menu";
-import { TickerType } from "../../types";
+import { Ticker } from "../../types";
+import CurrencyBadge from "../common/CurrencyBadge/CurrencyBadge";
 import styles from "./CurrencyCard.module.scss";
 
 type CurrencyCardProps = {
-  ticker: TickerType;
+  ticker: Ticker;
   equity: number;
   marketCap: string;
-  icon: JSX.Element;
 };
 
-const CurrencyCard = ({
-  ticker,
-  equity,
-  marketCap,
-  icon,
-}: CurrencyCardProps) => {
+const CurrencyCard = ({ ticker, equity, marketCap }: CurrencyCardProps) => {
   return (
     <div className={`${styles.card} ${styles[ticker]}`}>
-      <span className={styles.logo}>{icon}</span>
+      <CurrencyBadge ticker={ticker} />
       <div className={styles.priceData}>
         <span className={styles.equity}>${equity.toFixed(2)}</span>
         <span className={styles.marketCap}>Market Cap ${marketCap}</span>

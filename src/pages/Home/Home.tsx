@@ -1,26 +1,30 @@
 import Card from "../../components/Card/Card";
 import Chart from "../../components/Chart/Chart";
 import CurrencyCard from "../../components/CurrencyCard/CurrencyCard";
-import getCurrencyCardIcon from "../../components/CurrencyCard/getCurrencyCardIcon";
 import ImpressionsBtn from "../../components/ImpressionsBtn";
-import { TickerType } from "../../types";
+import { CurrencyData, Transaction } from "../../types";
 import styles from "./Home.module.scss";
+import { css } from "@linaria/core";
 
 import {
   ScrollMenu,
   // VisibilityContext
 } from "react-horizontal-scrolling-menu";
 import { ArrowLeft, ArrowRight } from "../../components/Arrow/Arrow";
+import ActivityBlock from "../../components/ActivityBlock/ActivityBlock";
+
+const activityCardClassname = css`
+  padding-left: 0;
+  padding-right: 0;
+
+  h2 {
+    padding-left: 1rem;
+  }
+`;
 
 /* eslint-disable @typescript-eslint/no-var-requires */
-const currencyData: CurrencyData[] = require("../../test/mocks/currencies.json");
-
-interface CurrencyData {
-  ticker: TickerType;
-  equity: number;
-  marketCap: string;
-  icon: JSX.Element;
-}
+const accounts: CurrencyData[] = require("../../test/mocks/currencies.json");
+const activities: Transaction[] = require("../../test/mocks/activities.json");
 
 export default () => (
   <div className={styles.main}>
@@ -37,13 +41,12 @@ export default () => (
         RightArrow={ArrowRight}
         wrapperClassName={styles.currencyCards}
       >
-        {currencyData.map(({ ticker, equity, marketCap }: CurrencyData) => (
+        {accounts.map(({ ticker, equity, marketCap }) => (
           <CurrencyCard
             key={ticker}
             ticker={ticker}
             equity={equity}
             marketCap={marketCap}
-            icon={getCurrencyCardIcon(ticker)}
           />
         ))}
       </ScrollMenu>
@@ -59,7 +62,16 @@ export default () => (
         >
           <Chart />
         </Card>
-        <Card title="Activity" />
+        <Card title="Activity" className={activityCardClassname}>
+          {activities.map(({ ticker, amount, type, status }) => (
+            <ActivityBlock
+              ticker={ticker}
+              amount={amount}
+              type={type}
+              status={status}
+            />
+          ))}
+        </Card>
         <Card title="Bitcoin" />
         <Card title="Your Portfolio" />
       </section>

@@ -3,11 +3,10 @@
   min-width: 6rem;
   min-height: 5rem;
   border-radius: 5px;
-  border: var(--grey-border);
-  box-shadow: 0 0 12px 0 rgba(220, 220, 220, 0.388);
+  border: var(--greyBorder);
+  box-shadow: var(--mainShadow);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .header {

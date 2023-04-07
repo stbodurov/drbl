@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  transition: box-shadow 0.35s;
+
+  &:hover {
+    box-shadow: 0 0 12px 4px rgba(220, 220, 220, 0.388);
+  }
+}
+
+.left {
+  display: flex;
+  gap: 1rem;
+}
+
+.textHolder {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.status {
+  color: var(--textSecondary);
+  font-size: 0.85rem;
+}
+
+.right {
+  display: flex;
+  min-height: 0;
+}
+
+.amount {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+}

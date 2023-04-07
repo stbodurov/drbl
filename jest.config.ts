@@ -10,6 +10,11 @@ const config: Config.InitialOptions = {
     "\\.(css|scss)$": "<rootDir>/src/test/mocks/styleMock.ts",
     "^.+\\.(svg)$": "<rootDir>/src/test/mocks/svg.ts",
   },
+  globals: {
+    "ts-jest": {
+      babelConfig: "babel.config.json",
+    },
+  },
 };
 
 export default config;
