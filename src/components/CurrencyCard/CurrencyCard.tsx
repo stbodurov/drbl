@@ -1,5 +1,3 @@
-// import { useContext } from "react";
-// import { VisibilityContext } from "react-horizontal-scrolling-menu";
 import { Ticker } from "../../types";
 import CurrencyBadge from "../common/CurrencyBadge/CurrencyBadge";
 import styles from "./CurrencyCard.module.scss";

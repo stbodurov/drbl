@@ -3,7 +3,6 @@ import App from "../../App";
 import { BrowserRouter as Router } from "react-router-dom";
 
 beforeEach(() => {
-  // IntersectionObserver isn't available in test environment
   const mockIntersectionObserver = jest.fn();
   mockIntersectionObserver.mockReturnValue({
     observe: jest.fn().mockReturnValue(null),

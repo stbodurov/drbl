@@ -1,25 +1,34 @@
 import Card from "../../components/Card/Card";
-import Chart from "../../components/Chart/Chart";
+import ImpressionChart from "../../components/Charts/ImpressionChart";
 import CurrencyCard from "../../components/CurrencyCard/CurrencyCard";
 import ImpressionsBtn from "../../components/ImpressionsBtn";
 import { CurrencyData, Transaction } from "../../types";
 import styles from "./Home.module.scss";
 import { css } from "@linaria/core";
 
-import {
-  ScrollMenu,
-  // VisibilityContext
-} from "react-horizontal-scrolling-menu";
+import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import { ArrowLeft, ArrowRight } from "../../components/Arrow/Arrow";
 import ActivityBlock from "../../components/ActivityBlock/ActivityBlock";
+import FavCurrencyCard from "../../components/Card/FavCurrencyCard";
+import PortfolioCard from "../../components/Card/PortfolioCard";
 
 const activityCardClassname = css`
   padding-left: 0;
   padding-right: 0;
 
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
   h2 {
     padding-left: 1rem;
   }
+`;
+
+const impressionChartClassname = css`
+  margin-top: 3rem;
 `;
 
 /* eslint-disable @typescript-eslint/no-var-requires */
@@ -60,7 +69,7 @@ export default () => (
             <ImpressionsBtn key="monthlyImpressions">Monthly</ImpressionsBtn>,
           ]}
         >
-          <Chart />
+          <ImpressionChart className={impressionChartClassname} />
         </Card>
         <Card title="Activity" className={activityCardClassname}>
           {activities.map(({ ticker, amount, type, status }) => (
@@ -72,8 +81,8 @@ export default () => (
             />
           ))}
         </Card>
-        <Card title="Bitcoin" />
-        <Card title="Your Portfolio" />
+        <FavCurrencyCard />
+        <PortfolioCard />
       </section>
     </main>
   </div>

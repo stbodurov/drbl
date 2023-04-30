@@ -18,7 +18,7 @@ const Card = ({ title, headerElements, className, children }: CardProps) => {
           {headerElements?.map((el) => el)}
         </div>
       </header>
-      <main>{children}</main>
+      <section>{children}</section>
     </div>
   );
 };

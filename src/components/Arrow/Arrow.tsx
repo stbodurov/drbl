@@ -13,7 +13,6 @@ export const ArrowLeft = () => {
   );
 
   useEffect(() => {
-    // NOTE: detect if whole component visible
     if (visibleElements.length) {
       setDisabled(isFirstItemVisible);
     }

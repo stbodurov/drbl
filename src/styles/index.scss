@@ -15,6 +15,14 @@ body {
   --mainShadow: 0 0 12px 0 rgba(220, 220, 220, 0.388);
   --greyBorder: 2px solid rgba(217, 217, 217, 0.259);
   --activeBtnShadow: 0 0 30px 1px rgba(102, 51, 222, 0.366);
+
+  --BTC-color: #624ede;
+  --ETH-color: #e6e6fe;
+  --LUNA-color: #00d664;
+  --DOT-color: #e6e6fe;
+
+  --BTC-color-secondary: #e6e6fe;
+  --LUNA-color-secondary: #ddfbe2;
 }
 
 ul {
@@ -53,8 +61,10 @@ ul {
 }
 
 .react-horizontal-scrolling-menu--scroll-container {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .react-horizontal-scrolling-menu--item:first-child {

@@ -72,9 +72,6 @@ export default {
   devServer: {
     hot: true,
   },
-  // output: {
-  // 	publicPath: ASSET_PATH
-  // }
   stats: {
     errorDetails: true,
   },

@@ -97,12 +97,12 @@ const data: ChartData<"bar"> = {
   ],
 };
 
-const Chart = () => {
+const ImpressionChart = ({ className }: { className?: string }) => {
   return (
-    <div style={{ minHeight: "12rem" }}>
+    <div className={className} style={{ minHeight: "8rem" }}>
       <Bar options={options} data={data} />
     </div>
   );
 };
 
-export default Chart;
+export default ImpressionChart;
