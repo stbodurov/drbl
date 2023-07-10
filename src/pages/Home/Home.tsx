@@ -16,13 +16,7 @@ const activityCardClassname = css`
   padding-left: 0;
   padding-right: 0;
 
-  main {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-  }
-
-  h2 {
+  .cardTitle {
     padding-left: 1rem;
   }
 `;
@@ -72,8 +66,9 @@ export default () => (
           <ImpressionChart className={impressionChartClassname} />
         </Card>
         <Card title="Activity" className={activityCardClassname}>
-          {activities.map(({ ticker, amount, type, status }) => (
+          {activities.map(({ id, ticker, amount, type, status }) => (
             <ActivityBlock
+              key={id}
               ticker={ticker}
               amount={amount}
               type={type}

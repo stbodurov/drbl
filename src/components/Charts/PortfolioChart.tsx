@@ -21,7 +21,7 @@ ChartJS.register(
   PointElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
 );
 
 const options: ChartOptions<"doughnut"> = {

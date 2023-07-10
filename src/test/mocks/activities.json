@@ -1,11 +1,13 @@
 [
   {
+    "id": "0",
     "ticker": "BTC",
     "amount": 0.000257,
     "type": "send",
     "status": "To Bitcoin Address"
   },
   {
+    "id": "1",
     "ticker": "LUNA",
     "amount": 0.0133843,
     "type": "receive",

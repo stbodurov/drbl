@@ -9,7 +9,7 @@ export const ArrowLeft = () => {
     useContext(VisibilityContext);
 
   const [disabled, setDisabled] = useState(
-    !initComplete || (initComplete && isFirstItemVisible)
+    !initComplete || (initComplete && isFirstItemVisible),
   );
 
   useEffect(() => {
@@ -37,7 +37,7 @@ export const ArrowRight = () => {
     useContext(VisibilityContext);
 
   const [disabled, setDisabled] = useState(
-    !visibleElements.length && isLastItemVisible
+    !visibleElements.length && isLastItemVisible,
   );
 
   useEffect(() => {

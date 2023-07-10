@@ -2,6 +2,8 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./styles/reset.scss";
 import "./styles/index.scss";
+import "react-horizontal-scrolling-menu/dist/styles.css";
+
 import { StrictMode } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -11,5 +13,5 @@ root.render(
     <Router>
       <App />
     </Router>
-  </StrictMode>
+  </StrictMode>,
 );

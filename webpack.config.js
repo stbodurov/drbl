@@ -34,7 +34,11 @@ export default {
         ],
       },
       {
-        test: /\.s?(a|c)ss$/,
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.s(a|c)ss$/,
         exclude: /node_modules/,
         use: [
           {

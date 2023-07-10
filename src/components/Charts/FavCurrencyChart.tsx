@@ -20,7 +20,7 @@ ChartJS.register(
   PointElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
 );
 
 let gradient: CanvasGradient;
@@ -60,7 +60,9 @@ const options: ChartOptions<"line"> = {
       stacked: true,
       grid: {
         display: false,
-        drawBorder: false,
+      },
+      border: {
+        display: false,
       },
       ticks: {
         align: "end",

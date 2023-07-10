@@ -5,6 +5,7 @@ interface CurrencyData {
 }
 
 interface Transaction {
+  id?: number;
   ticker: Ticker;
   amount: number;
   type: "send" | "receive";

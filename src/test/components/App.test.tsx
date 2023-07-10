@@ -16,7 +16,7 @@ test("renders dashboard", () => {
   render(
     <Router>
       <App />
-    </Router>
+    </Router>,
   );
   const headerTitle = screen.getByText(/Impressions/);
   expect(headerTitle).toBeInTheDocument();
